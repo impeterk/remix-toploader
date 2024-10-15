@@ -1,6 +1,13 @@
 {
   "name": "remix-toploader",
   "version": "0.0.1",
+  "description": "Remix Top Loading bar using NProgress.",
+  "author": "Peter Kudelas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/impeterk/remix-toploader.git"
+  },
   "main": "dist/index.mjs",
   "types": "dist/index.d.mts",
   "scripts": {
@@ -22,9 +29,6 @@
     "Top Loading Bar",
     "Progressbar"
   ],
-  "author": "Peter Kudelas",
-  "license": "MIT",
-  "description": "Remix Top Loading bar using NProgress.",
   "files": [
     "dist/**/*.js*",
     "dist/**/*.mjs*",
