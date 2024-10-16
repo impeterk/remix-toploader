@@ -1,8 +1,11 @@
 # Remix TopLoader
 
-- A Remix Top Loader Component **heavily** inspired by [Next.js TopLoader](https://github.com/TheSGJ/nextjs-toploader). Based on [NProgress](https://www.npmjs.com/package/nprogress)
+- A Remix Top Loading bar Component **heavily** inspired by [Next.js TopLoader](https://github.com/TheSGJ/nextjs-toploader). Based on [NProgress](https://www.npmjs.com/package/nprogress)
 
 > :exclamation: This is my first package. Contributions are welcomed 👍
+
+![Remix Top Loader](https://github.com/user-attachments/assets/99723ebb-c35b-4d47-b14c-577aeaa5aa22)
+
 
 ## Install
 
