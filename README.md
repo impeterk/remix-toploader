@@ -1,11 +1,10 @@
-# Remix TopLoader
+# Remix / React Router TopLoader
 
-- A Remix Top Loading bar Component **heavily** inspired by [Next.js TopLoader](https://github.com/TheSGJ/nextjs-toploader). Based on [NProgress](https://www.npmjs.com/package/nprogress)
+- A Remix and React Router Top Loading bar Component **heavily** inspired by [Next.js TopLoader](https://github.com/TheSGJ/nextjs-toploader). Based on [NProgress](https://www.npmjs.com/package/nprogress)
 
 > :exclamation: This is my first package. Contributions are welcomed 👍
 
-![Remix Top Loader](https://github.com/user-attachments/assets/99723ebb-c35b-4d47-b14c-577aeaa5aa22)
-
+![Remix/Router v7 Top Loader](https://github.com/user-attachments/assets/99723ebb-c35b-4d47-b14c-577aeaa5aa22)
 
 ## Install
 
@@ -32,14 +31,18 @@ pnpm add remix-toploader
 import using:
 
 ```js
+// in Remix v2
 import RemixTopLoader from "remix-toploader";
+// or
+import { RemixTopLoader } from "remix-toploader";
+
+// in React Router v7
+import { RouterTopLoader } from "remix-toploader";
 ```
 
-Navide to `root.tsx` of your app and add `<RemixTopLoader />` to the `<body>` tag.
+Navigate to `root.tsx` of your app and add `<RemixTopLoader />` to the `<body>` tag.
 
 ```js
-import RemixTopLoader from "remix-toploader";
-
 export function Layout({ children }) {
   return (
     <html lang="en">
@@ -50,7 +53,10 @@ export function Layout({ children }) {
         <Links />
       </head>
       <body>
+        {/* in Remix v2 */}
         <RemixTopLoader />
+        {/* in React Router v7 */}
+        <RouterTopLoader />
         {children}
         <ScrollRestoration />
         <Scripts />
