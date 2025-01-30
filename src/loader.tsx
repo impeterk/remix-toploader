@@ -1,8 +1,7 @@
-import { useFetchers, useNavigation } from "@remix-run/react";
 import * as React from "react";
 import * as NProgress from "nprogress";
 
-export type TopLoaderProps = {
+export type LoaderProps = {
   /**
    * Color for the TopLoader.
    * @default "#29d"
@@ -74,9 +73,11 @@ export type TopLoaderProps = {
    *
    */
   showForHashAnchor?: boolean;
+  useNavigation: any;
+  useFetchers: any;
 };
 
-const RemixTopLoader = ({
+const Loader = ({
   color = "#29d",
   height = 3,
   showSpinner,
@@ -89,7 +90,9 @@ const RemixTopLoader = ({
   template,
   zIndex = 1600,
   showAtBottom = false,
-}: TopLoaderProps): React.JSX.Element => {
+  useFetchers,
+  useNavigation,
+}: LoaderProps): React.JSX.Element => {
   const transition = useNavigation();
 
   const fetchers = useFetchers();
@@ -109,8 +112,8 @@ const RemixTopLoader = ({
     !shadow && shadow !== undefined
       ? ""
       : shadow
-        ? `box-shadow:${shadow}`
-        : `box-shadow:0 0 10px ${color},0 0 5px ${color}`;
+      ? `box-shadow:${shadow}`
+      : `box-shadow:0 0 10px ${color},0 0 5px ${color}`;
 
   // Check if to show at bottom
   const positionStyle = showAtBottom ? "bottom: 0;" : "top: 0;";
@@ -143,4 +146,4 @@ const RemixTopLoader = ({
 
   return styles;
 };
-export default RemixTopLoader;
+export default Loader;
