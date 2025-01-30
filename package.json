@@ -59,6 +59,8 @@
   },
   "packageManager": "yarn@3.2.4",
   "dependencies": {
-    "nprogress": "^0.2.0"
+    "nprogress": "^0.2.0",
+    "@remix-run/react": ">= 2.0.0",
+    "react-router": ">=7.1.4"
   }
 }
