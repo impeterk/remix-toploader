@@ -1,4 +1,6 @@
 import { useFetchers, useNavigation } from "@remix-run/react";
 import Loader from "./loader";
-
-export const RemixTopLoader = Loader({ useFetchers, useNavigation });
+import * as React from "react";
+export const RemixTopLoader = () => {
+  return <Loader useFetchers={useFetchers} useNavigation={useNavigation} />;
+};

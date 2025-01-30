@@ -3,7 +3,7 @@ export default defineConfig({
   target: "es6",
   clean: true,
   dts: true,
-  entry: ["src/index.ts"],
+  entry: ["src/index.tsx"],
   keepNames: true,
   sourcemap: true,
   minify: true,

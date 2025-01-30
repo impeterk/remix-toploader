@@ -1,7 +1,7 @@
 {
   "name": "remix-toploader",
-  "version": "0.0.2",
-  "description": "Remix Top Loading bar using NProgress.",
+  "version": "0.0.4",
+  "description": "Remix and React Router Top Loading bar using NProgress.",
   "author": "Peter Kudelas",
   "license": "MIT",
   "repository": {

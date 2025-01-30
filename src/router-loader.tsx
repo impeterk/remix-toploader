@@ -1,4 +1,6 @@
 import { useFetchers, useNavigation } from "react-router";
 import Loader from "./loader";
-
-export const RouterTopLoader = Loader({ useFetchers, useNavigation });
+import * as React from "react";
+export const RouterTopLoader = () => {
+  return <Loader useFetchers={useFetchers} useNavigation={useNavigation} />;
+};
