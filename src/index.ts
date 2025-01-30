@@ -1,2 +1,5 @@
-export { RemixTopLoader } from "./remix-loader";
-export { RouterTopLoader } from "./router-loader";
+import { RemixTopLoader } from "./remix-loader";
+import { RouterTopLoader } from "./router-loader";
+
+export { RemixTopLoader, RouterTopLoader };
+export default RemixTopLoader;
