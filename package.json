@@ -1,6 +1,6 @@
 {
   "name": "remix-toploader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Remix and React Router Top Loading bar using NProgress.",
   "author": "Peter Kudelas",
   "license": "MIT",
